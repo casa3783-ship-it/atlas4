@@ -1,4 +1,4 @@
-/* Basic styling and font imports for accessibility and extra credit */
+/* Caleb Sanchez ATLS 3150: Assignment 10 */
 body {
     font-family: 'Open Sans', sans-serif; /* Applied Google Font */
     margin: 0;
@@ -8,8 +8,8 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif; /* Applied a different Google Font for headings */
-    color: #004d99; /* A darker, more professional blue */
+    font-family: 'Roboto', sans-serif; /* Applied a second font */
+    color: #004d99;
     margin-top: 0;
 }
 
@@ -42,10 +42,10 @@ nav a {
 
 nav a:hover, nav a:focus {
     background-color: #004494;
-    outline: 2px solid white; /* Accessibility focus outline */
+    outline: 2px solid white; 
 }
 
-/* Main container using CSS Grid for a multi-column layout */
+
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -64,7 +64,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* Flexbox for organizing content within a grid cell */
+
 .animal-info, .lists-container {
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ ul, ol {
     border: 2px solid #0056b3;
     padding: 15px 30px;
     border-radius: 8px;
-    list-style-type: none; /* Removed default list style for custom styling */
+    list-style-type: none; 
 }
 
 li {
@@ -89,7 +89,7 @@ li {
 }
 
 ul li::before {
-    content: "• "; /* Added custom bullet point */
+    content: "• "; 
     color: #0056b3;
     font-weight: bold;
 }
@@ -108,7 +108,7 @@ ol li::before {
     color: #0056b3;
 }
 
-/* Definition list styling */
+
 dl.advanced-animals {
     display: grid;
     gap: 10px;
@@ -126,13 +126,13 @@ dd {
     border-left: 2px solid #ccc;
 }
 
-/* Emphasis and importance styling */
+
 strong {
     color: #0056b3;
 }
 
 em {
-    color: #e65c00; /* A contrasting color for emphasis */
+    color: #e65c00; 
 }
 
 hr {
@@ -150,9 +150,10 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive design - for smaller screens, the grid will stack */
+
 @media (min-width: 768px) {
     .animal-info {
         flex-direction: row;
     }
+
 }
